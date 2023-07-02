@@ -3,5 +3,6 @@ Broadly, transformer models can be grouped into three categories:-
 2. BERT-like (also called auto-encoding Transformer models)
 3. BART/T5-like (also called sequence-to-sequence Transformer models)
 
+
 # References
-1. https://huggingface.co/learn/nlp-course/chapter1/1
+1. All the notebooks are from hugging face NLP course- https://huggingface.co/learn/nlp-course/chapter1/1
