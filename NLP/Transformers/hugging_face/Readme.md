@@ -9,6 +9,7 @@ Broadly, transformer models can be grouped into three categories:-
 3. BART/T5-like (also called sequence-to-sequence Transformer models)
 
 **Bias and limitations**
+
  To enable pretraining on large amounts of data, researchers often scrape all the content they can find, taking the **best as well as the worst of what is available on the internet**. Below is one example where the model gives only one gender-free answer (waiter/waitress).:-
 ```
 from transformers import pipeline
@@ -25,6 +26,10 @@ print([r["token_str"] for r in result])
 ['nurse', 'waitress', 'teacher', 'maid', 'prostitute']
 ```
 When you use these tools, you therefore need to keep in the back of your mind that the original model you are using could very easily generate sexist, racist, or homophobic content. Fine-tuning the model on your data won’t make this intrinsic bias disappear. A less obvious source of bias is the way the model is trained. Your model will blindly optimize for whatever metric you chose, without any second thoughts.
+
+### Using Transformers
+
+**Behind_the_pipeline_(PyTorch.ipynb)** - The notebook provides a complete example of using the HuggingFace library for sentiment analysis. It demonstrates the three steps of the pipeline: preprocessing, passing inputs through the model, and postprocessing.
 
 # References
 1. All the notebooks are from hugging face NLP course- https://huggingface.co/learn/nlp-course/chapter1/1
