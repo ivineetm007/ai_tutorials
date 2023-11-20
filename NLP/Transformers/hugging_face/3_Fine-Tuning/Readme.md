@@ -19,3 +19,9 @@ To apply padding as necessary on each batch and avoid having over-long inputs wi
 **Collate Function**- Responsible for putting together samples inside a batch. 
 
 ## Fine-tuning with the trainer API
+
+The 🤗 Transformers provides a **Trainer** class to fine-tune any of the pre-trained models. Before using Trainer, we need to define instance a **TrainingArguments** class 
+that will contain all the hyperparameters as well as the checkpoints directory.
+
+**Evaluation**- We can define our own **compute_metrics** function and pass it in the trainer as argument.
+
